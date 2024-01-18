@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vector layer.css" />
+    <script src="vector layer.js"></script>
+    <title>vector layer</title>
+  </head>
+  <body>
+    <div id="card_master">
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">POINT</div>
+        <div class="card_body">
+          <span class="card_body_span">Select Symbol From Following</span>
+          <select id="card_body_select">
+            <option>Rectangle</option>
+            <option>Triangle</option>
+            <option>Round</option>
+          </select>
+          <span class="card_body_span">Symbol Size</span>
+          <input
+            placeholder="Enter a symbol size"
+            type="number"
+          />
+          <span class="card_body_span">Symbol Color</span>
+          <input
+          placeholder="Enter a symbol color"
+          type="text"
+        />
+          <span class="card_body_span">Rotational Angle</span>
+          <input
+            placeholder="Enter a Rotational Angle"
+            class="card_input"
+            type="number"
+          />
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">LINE</div>
+        <div class="card_body">
+          <span class="card_body_span">Select Symbol From Following</span>
+          <select id="card_body_select">
+            <option>Straight line</option>
+            <option>Dotted line</option>
+            <option>Dash line</option>
+          </select>
+          <span class="card_body_span">Symbol Size</span>
+          <input
+            placeholder="Enter a symbol size"
+            type="number"
+          />
+          <span class="card_body_span">Symbol Color</span>
+          <input
+          placeholder="Enter a symbol color"
+          type="text"
+        />
+          <span class="card_body_span">Rotational Angle</span>
+          <input
+            placeholder="Enter a Rotational Angle"
+            type="number"
+          />
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">POLYGON</div>
+        <div class="card_body">
+          <span class="card_body_span">Select Symbol From Following</span>
+          <select id="card_body_select">
+            <option>Option 1</option>
+            <option>Option 1</option>
+            <option>Option 1</option>
+          </select>
+          <span class="card_body_span">Symbol Size</span>
+          <input
+            placeholder="Enter a symbol size"
+            type="number"
+          />
+          <span class="card_body_span">Fill Color</span>
+          <input
+          placeholder="Enter a fill color"
+          type="text"
+        />
+          <span class="card_body_span">Outline Color</span>
+          <input
+            placeholder="Enter a outline color"
+            type="text"
+          />
+          <span class="card_body_span">Rotational Angle</span>
+          <input
+            placeholder="Enter a Rotational Angle"
+            type="number"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="button">
+    
+      <button onclick="ok()">Ok</button>
+      <button onclick="cancel()">Cancel</button>
+      </div>
+  </body>
+</html>

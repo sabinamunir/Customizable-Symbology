@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#symbology_floating_div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#symbology_header {
+    width: 400px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(97, 40, 255);
+}
+
+.symbology_links {
+    text-decoration: none;
+    color: rgb(235, 235, 235);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 30px; */
+    border-radius: 5px;
+    background-color: rgb(60, 60, 60);
+    padding: 10px 5px;
+}
+
+#symbology_body {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(40, 40, 40);
+}

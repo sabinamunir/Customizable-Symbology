@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styling.css" />
+    <script src="styling.js"></script>
+    <title>Styling</title>
+  </head>
+  <body>
+    <div id="card_master">
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">THEME SELECTION</div>
+        <div class="card_checkbox_div">
+          <input class="card_checkbox_input" type="checkbox" />
+          <span class="card_checkbox_div_span">Dark/Night</span>
+        </div>
+        <div class="card_checkbox_div">
+          <input class="card_checkbox_input" type="checkbox" />
+          <span class="card_checkbox_div_span">Light</span>
+        </div>
+        <div class="card_checkbox_div">
+          <input class="card_checkbox_input" type="checkbox" />
+          <span class="card_checkbox_div_span">Neutral</span>
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">MARKER</div>
+        <div class="card_body">
+          <span class="card_body_span">Marker Type</span>
+          <select id="card_body_select">
+            <option>Round</option>
+            <option>Triangle</option>
+            <option>Rectangle</option>
+          </select>
+          <span class="card_body_span">Marker Size</span>
+          <input
+            placeholder="Enter a marker size"
+            class="card_input"
+            type="number"
+          />
+          <span class="card_body_span">Marker Color</span>
+          <input
+            placeholder="Enter a marker color"
+            class="card_input"
+            type="text"
+          />
+          <span class="card_body_span">Rotational Degree</span>
+          <input
+            placeholder="Enter a rotational degree angle"
+            class="card_input"
+            type="number"
+          />
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">ADVANCED SETTINGS</div>
+        <div class="card_body">
+          <span class="card_body_span">Layer Transparency</span>
+          <input type="range" />
+          <span class="card_body_span">Heat Map Gradient</span>
+          <div id="styling_page_heatmap_div"></div>
+          <span class="card_body_span">Zoom Level</span>
+          <input
+            placeholder="Enter a zoom level"
+            class="card_input"
+            type="number"
+          />
+          <div class="card_checkbox_div">
+            <input class="card_checkbox_input" type="checkbox" />
+            <span class="card_checkbox_div_span">Drop Shadow</span>
+          </div>
+          <div class="card_checkbox_div">
+            <input class="card_checkbox_input" type="checkbox" />
+            <span class="card_checkbox_div_span">Glow Effect</span>
+
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+   
+  </body>
+</html>

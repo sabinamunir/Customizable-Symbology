@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="labelling.css" />
+    <script src="labelling.js"></script>
+    <title>labelling</title>
+  </head>
+  <body>
+    <div id="card_master">
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">LABEL FONT</div>
+        <div class="card_body">
+          <span class="card_body_span">Font Theme</span>
+          <select id="card_body_select">
+            <option>Bold</option>
+            <option>Italic</option>
+            <option>Underline</option>
+          </select>
+          <span class="card_body_span">Font Family</span>
+          <select id="card_body_select">
+            <option>Times New Roman</option>
+            <option>Arial</option>
+            <option>Futura</option>
+          </select>
+          <span class="card_body_span">Font Size</span>
+          <select id="card_body_select">
+            <option>12px</option>
+            <option>14px</option>
+            <option>16px</option>
+          </select>
+          <span class="card_body_span">Text Color</span>
+          <input Enter the colour type="text"></input>
+          <span class="card_body_span">Spacing</span>
+          <select id="card_body_select">
+            <option>no spacing</option>
+            <option>single spacing</option>
+            <option>double spacing</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">LABEL PLACEMENT</div>
+        <div class="card_body">
+          <span class="card_body_span">Label Placement</span>
+          <select id="card_body_select">
+            <option>Above the feature</option>
+            <option>Below the feature</option>
+          </select>
+          <span class="card_body_span">Label Size/Thickness</span>
+          <select id="card_body_select">
+            <option>12px</option>
+            <option>14px</option>
+            <option>16px</option>
+          </select>
+          <span class="card_body_span">Label Density</span>
+          <select id="card_body_select">
+            <option>Density level 1- 18 labels in 3.3 per square decimeter</option>
+            <option>Density level 2- 36 labels in 6.6 per square decimeter</option>
+            <option>Density level 3- 54 labels in 10.0 per square decimeter</option>
+          </select>
+          <span class="card_body_span">Off Set</span>
+          <select id="card_body_select">
+            <option>Option 1</option>
+            <option>Option 1</option>
+            <option>Option 1</option>
+          </select>
+          <span class="card_body_span">Label Rotational Angle-Geographic</span>
+          <select id="card_body_select">
+            <option>0 dagree</option>
+            <option>90 dagree</option>
+            <option>180 dagree</option>
+            <option>270 dagree</option>
+            
+          </select>
+        </div>
+      </div>
+
+      <div class="card_floating_div">
+        <div class="card_floating_div_header">LABEL HALO</div>
+        <div class="card_body">
+          <span class="card_body_span">Halo Pattern</span>
+          <select id="card_body_select">
+            <option>Highlight effect</option>
+            <option>Glowing effect</option>
+          </select>
+          <span class="card_body_span">Halo Color</span>
+          
+            <input
+            placeholder="Enter the color of Halo"
+            type="text"
+          />
+          <span class="card_body_span">Radius of Halo</span>
+          <input
+            placeholder="Enter the Radius of Halo"
+            class="card_input"
+            type="number"
+          />
+          <span class="card_body_span">Transparency</span>
+          <input type="range" />
+        </div>
+      </div>
+    </div>
+
+    <div id="button">
+    
+    <button onclick="ok()">Ok</button>
+    <button onclick="cancel()">Cancel</button>
+    </div>
+
+  </body>
+</html>
